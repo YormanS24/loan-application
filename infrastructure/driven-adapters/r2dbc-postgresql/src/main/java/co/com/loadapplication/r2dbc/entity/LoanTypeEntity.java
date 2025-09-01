@@ -20,6 +20,7 @@ public class LoanTypeEntity {
     @Id
     @Column("loan_type_id")
     private Long loanTypeId;
+
     private String name;
 
     @Column("min_amount")

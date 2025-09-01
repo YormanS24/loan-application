@@ -18,7 +18,7 @@ public class GatewayRepositoryImpl implements GatewayRepository {
     public Mono<Gateway> findByDocument(String documentNumber) {
         return webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8090/api/v1/usuario/{documentNumber}", documentNumber)
+                .uri("http://localhost:8001/api/v1/usuario/{documentNumber}", documentNumber)
                 .retrieve()
                 .onStatus(
                         status -> status.value() == 404,

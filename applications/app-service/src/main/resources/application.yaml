@@ -27,12 +27,12 @@ cors:
   allowed-origins: "http://localhost:4200,http://localhost:8080"
 adapters:
   r2dbc:
-    host: "localhost"
+    host: localhost
     port: 5432
-    database: "micro-auth-db"
-    schema: "public"
-    username: "postgres"
-    password: "Profeta2"
+    database: loan-application
+    schema: public
+    username: postgres
+    password: Profeta2
 logging:
   level:
     root: "INFO"
